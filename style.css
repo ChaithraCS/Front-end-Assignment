@@ -1,6 +1,25 @@
-*{font-weight: bold;}
-#myspan{ color:red}
-#para2{background-color: #e4da87;font-size: 18px;}
-#para3{border:5px green solid; font-size: 20px;}
-#para4{border:1rem green solid}
-#para5{border:1em green solid}
+div.container::before {
+    content: "I am created by CSS, I got padding 10px, background color orange and border 2px solid green";
+    background-color: orange;
+    display: block;
+    padding: 10px;
+    border: 2px solid green;
+}
+div.container::after {
+    content: "heIllo";
+    background-color: orange;
+    display: block;
+    padding: 10px;
+    border: 2px solid green;
+}
+.block {
+    border: 1px solid #000;
+    margin: 5px;
+    padding: 5px;
+}
+#nth-selector-block1, #nth-selector-block3 {
+    background-color: green;
+}
+#nth-selector-block2:hover, #nth-selector-block4:hover {
+    background-color: yellow;
+}
